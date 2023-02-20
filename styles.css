@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+    font-weight: 15px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#image1,
+#image2,
+#image3 {
+    width: auto;
+    height: 800px;
+}
+
+#section1 {
+    background-color: rgb(128, 17, 17);
+    color: white;
+    padding: 50px 150px 50px 150px;
+
+}
+
+#section1-sub {
+    margin-top: 40px;
+
+}
+
+#subimg {
+    border-radius: 20px;
+    text-align: center;
+}
+
+#section2 {
+    padding: 50px 150px 50px 150px;
+}
+
+#section2-sub {
+    margin-top: 30px;
+}
+
+#problem {
+    margin: 70px 0 70px 0;
+}
+
+#results {
+    margin: 70px 0 70px 0;
+}
+
+#section3 {
+    position: relative;
+    background-color: rgb(128, 17, 17);
+    color: white;
+    padding: 50px;
+}
+
+.sub-section3 {
+
+    padding: 80px 150px 80px 150px;
+
+}
+
+#links1 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+}
+
+#links1,
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#links2 {
+    text-align: center;
+    color: white;
+}
+
+#links2,
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#section4 {
+    padding: 50px 150px 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(128, 17, 17);
+    color: white;
+    margin-top: 80px;
+}
+
+.section4-sub {
+    background-color: black;
+    color: white;
+    width: 300px;
+    margin-top: 20px;
+    padding: 20px 25px 20px 10px;
+    border-radius: 10px;
+
+}
+
+.section4-img {
+    border-radius: 20px;
+    box-shadow: 4px 3px rgb(236, 221, 221);
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#section5 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 20px;
+
+
+}
+

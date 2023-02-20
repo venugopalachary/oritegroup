@@ -1,83 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Coming Soon - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">Our Website is Coming Soon</h1>
-                    <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!</p>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Email address input-->
-                        <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                        </div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                    </form>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Echobhoom</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand float-left" href="#"><img src="Images/second-image.jpg" alt="Logo" width="50"
+                        height="50">ECHOBOOOM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold m-2" aria-current="page" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold m-2 " href="#">LIFE @ ECHOBOOOM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold m-2" href="#">OUR OFFERINGS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold m-2" href="#">360 VIRTUAL TOUR</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold m-2" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                OUR Brands
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Skill Kulture</a></li>
+                                <li><a class="dropdown-item" href="#">Uno Green</a></li>
+                                <li><a class="dropdown-item" href="#">360 Virtual Tour</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold m-2" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold m-2" href="#">BUSINESS ENQUERY</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="Images/third-image.jpg" class="d-block w-100" alt="..." id="image1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="Images/second-image.jpg" class="d-block w-100" alt="..." id="image2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/fourth-image.jpg" class="d-block w-100" alt="..." id="image3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
                 </div>
             </div>
         </div>
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="container-fluid" id="section1">
+        <div>
+            <h6>_WHO WE ARE</h6>
+
+            <h1>Echoboom Management And Enterpreneurial Solutions <br> Priavate Limited </h1>
+        </div>
+
+        <div class="row" id="section1-sub">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus animi exercitationem veniam
+                    id dolorum iste laborum deserunt cum pariatur praesentium velit eum ea sequi, reiciendis voluptate,
+                    repellendus eius! Laboriosam autem tenetur sed ea voluptatum? Accusantium, commodi. Sunt atque
+                    delectus reprehenderit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat porro vitae, cupiditate animi autem
+                    esse saepe quasi nihil nemo unde!</p>
+                <button type="button" class="btn btn-light">Read More About Us</button>
+            </div>
+            <div class="col-md-6">
+                <img id="subimg" src="Images/first-image.jpg" alt="some image" width="400" height="400">
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    </div>
+
+    <div class="container-fluid" id="section2">
+        <div>
+            <h6 class="fw-bold">_HOW WE WORK</h6>
+        </div>
+
+        <div class="row" id="section2-sub">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates alias similique aliquam. Ex
+                    illo ullam alias placeat cum aperiam voluptate culpa minima itaque tenetur et assumenda
+                    veritatis nesciunt quisquam corporis eaque, aut, hic nisi totam. Illo provident odit
+                    reprehenderit tempore maiores fuga. Magnam ab asperiores accusantium, hic qui tempore
+                    doloremque.</p>
+            </div>
+            <div class="col-md-4 w-25 mt-10">
+                <button type="button" class="btn btn-danger">READ MORE</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2" id="problem">
+                    <h4 class="fw-bolder">PROBLEMS</h4>
+                </div>
+                <div class="col-md-8">
+                    <img src="Images/thread.png" alt="thred" width="800" height="150">
+                </div>
+                <div class="col-md-2">
+
+                    <h4 class="fw-bolder" id="results">RESULTS</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid mb-2" id="section3">
+        <div class="sub-section3">
+            <h6 class="fw-bold">_OUR OFFERINGS</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dignissimos eos culpa eum tempora
+                voluptates accusantium ullam nisi sunt quidem iste suscipit sint doloribus quia, reprehenderit in aut
+                adipisci corrupti officiis accusamus vitae! Veniam nostrum enim
+                delectus aut labore quam beatae odio dolorum asperiores nam eius quidem, reiciendis odit amet?</p>
+        </div>
+        <div class="container">
+            <div class="row" id="links1">
+                <div class="col-md-4">
+                    <a href="#"><img src="Images/stratagy.jpg" alt="stratagy" width="350" height="250">
+                        <h4 class="fw-bolder">Strategy</h4>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="Images/soft-skills.webp" alt="sales" width="350" height="250">
+                        <h4 class="fw-bolder">Sales & Marketing</h4>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="Images/staffing.jpeg" alt="sales" width="350" height="250">
+                        <h4 class="fw-bolder">Staffing Solutions</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="row" id="links2">
+                <div class="col-md-4">
+                    <a href="#"><img src="Images/website.webp" alt="stratagy" width="350" height="250">
+                        <h4 class="fw-bolder">Website Creation</h4>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="Images/digimark.jpeg" alt="sales" width="350" height="250">
+                        <h4 class="fw-bolder">Digital Marketing</h4>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="Images/skill.jpg" alt="sales" width="350" height="250">
+                        <h4 class="fw-bolder">Skill Kulture</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="section4">
+        <div>
+            <h6 class="fw-bold">_CAREER OPPORTUNITY</h6>
+            <h1>Why Echobhooom?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam earum ducimus corrupti ipsa, iure odit
+                distinctio praesentium fugiat magni, itaque repellat reprehenderit! Repellat, officia animi nihil
+                placeat nulla quia, laborum a expedita, delectus molestiae natus culpa odio quod repellendus velit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae, asperiores at expedita,
+                distinctio culpa similique explicabo vitae quod magni
+                maiores dolorem pariatur voluptatibus aspernatur!</p>
+            <button type="button" class="btn btn-light">OUR TEAM</button>
+        </div>
+        <div>
+            <div>
+                <img src="Images/first-image.jpg" alt="..." width="500" height="500" class="section4-img">
+            </div>
+            <div class="section4-sub">
+                <h6 class="fw-bold">we are hiring?</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consequatur?</p>
+                <a href="#">Examplel@email.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="section5">
+        <div>
+            <h6 class="fw-bold">_REACH US</h6>
+            <h2>Send us a message</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">your name</label>
+                    <input type="text" class="form-control" id="exampleInputName"
+                        aria-describedby="Disabled input example">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">your e-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputSubject" class="form-label">subject</label>
+                    <input type="text" class="form-control" id="exampleInputSubject"
+                        aria-describedby="Disabled input example">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputSubMessage" class="form-label">message</label>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">Send meesage</button>
+            </form>
+        </div>
+        <div>
+
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; width: 500px;">
+                <iframe src="https://maps.google.com/maps?&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <button type="button" class="btn btn-danger">MORE DETAILS</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-center bg-dark text-muted p-4">
+        <!-- Section: Social media -->
+
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-light fw-bold mb-4 ">
+                            _ABOUT US
+                        </h6>
+                        <p>
+                            <a href="#" class="text-reset">Customer Satisfaction: 14596</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Experience: 12 Years</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Current Clients: 7</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Upcomming Clients: 8</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Projects: 144</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Our Team: 412 people </a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-light">
+                            _OUR OFFERINGS
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Strategy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Sales & Marketing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Staffing Solutions</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Website Creation</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Digital Marketing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Skill Kulture</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-light">
+                            _OUR LOCATIONS
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Mumbai: Head Quater</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Bangalore</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Goa</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Guwahati</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Hyderabad</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Kolkata</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vizag</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-light">
+                            _LIFE @ ECHOBOOOM
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">What To Expect</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">What You'll Get</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Who You Are</a>
+                        </p>
+
+                    </div>
+
+                </div>
+        </section>
+
+
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            ©2021 Echobhooom:
+            <a class="text-reset fw-bold" href="#">All Rights Reserved</a>
+        </div>
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
